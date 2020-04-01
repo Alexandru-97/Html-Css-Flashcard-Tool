@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Study</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body id="index">
+    
+    <nav class="home-menu">
+        <p><strong>Flash Study</strong></p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="study.html">Study</a></li>
+            <li><a href="#">Create</a></li>
+            <li><a href="#">Manage decks</a></li>
+            <li><a href="#">Contact</a>
+                <ul>
+                    <li><a href="guide.html">Guide</a></li>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">Information</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><input type="Search" id="search" placeholder="Find item"></a></li>
+        </ul>
+    </nav>
+    <div class="all-decks">
+       <h2 class="rubric title">Your latest topic:</h3>
+        <br>
+       <h3 class="header title">Tehnici Web</h2> 
+       <ul class="deck-list">
+           <li class="deck-name active">Html</li>
+           <li class="deck-name">Css</li>
+           <li class="deck-name">Javascript</li>
+           <li class="deck-name">Node.js</li>
+       </ul>
+       
+       <form action="">
+           <input
+            type="text"
+            class="new-deck"
+            placeholder="new deck name"
+            aria-label="new deck name"
+            >
+        <button 
+        class="btn create"
+        aria-label="create new deck"
+        >+</button>     
+       </form>
+    </div>
+    
+       
+    <div class="deck-content">
+        <div class="deck-header">
+           <h3 class="deck-title">Html</h3>
+           <p class="flashcard-count">2 flashcards remaining</p>
+        </div>
+        <div class="deck-body">
+            <div 
+            class="flashcards">
+            <div 
+            class="flashcard">
+            <input 
+            type="checkbox"
+            id="flashcard 1" 
+            >
+            <label for="flashcard 1">
+                <span class="custom-checkbox"></span> 
+                Question 1 
+            </label> 
+            </div>
+            <!--End flashcard 1-->
+            <div 
+            class="flashcard">
+            <input 
+            type="checkbox"
+            id="flashcard 2" 
+            >
+            <label for="flashcard 2">
+                <span class="custom-checkbox"></span> 
+                Question 2 
+            </label> 
+            </div>
+            <!--End flashcard 2-->
+            <div 
+            class="flashcard">
+            <input 
+            type="checkbox"
+            id="flashcard 3" 
+            >
+            <label for="flashcard 3">
+                <span class="custom-checkbox"></span> 
+                Question 3 
+            </label> 
+            </div>
+            <!--End flashcard 3-->
+            </div>
+            <div class="new flashcard creation">
+                <form action="">
+                    <input
+                     type="text"
+                     class="new-flashcard"
+                     id="new question"
+                     placeholder="add flashcard"
+                     aria-label="new flashcard name"
+                     >
+                 <button 
+                 class="btn create"
+                 aria-label="create new flashcard"
+                 >+</button>     
+                </form>
+                <form action="">
+                    <input
+                     type="text"
+                     class="new-flashcard"
+                     id="new hint"
+                     placeholder="add hint"
+                     aria-label="new flashcard hint"
+                     >
+                 <button 
+                 class="btn create"
+                 aria-label="create new flashcard"
+                 >+</button>     
+                </form>
+            </div>
+            <div class="delete-flashcard">
+                <button class="btn delete">Delete deck</button>
+                <button class ="btn delete">Clear flashcards</button>
+            </div>
+        </div>
+    </div>   
+    <br>
+    <br>
+    <div class="contact"
+    id="contact-info">
+        <p>Contact us through email at:</p> <a href="#">flash_study@gmail.com</a>
+        <br>
+        <br>
+        <p>Or call our customer service team at:</p> <a href="#">+407xxxxxxxx</a>
+    </div>
+    
+</body>
+</html>

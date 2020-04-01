@@ -1,0 +1,180 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body id="study">
+        <nav class="home-menu">
+            <p><strong>Flash Study</strong></p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="study.html">Study</a></li>
+                <li><a href="#">Sign out</a></li>
+                <li><a href="#">Tips</a>
+                    <ul>
+                        <li><a href="guide.html">Guide</a></li>
+                        <li><a href="#">Faq</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><input type="Search" id="search" placeholder="Find item"></a></li>
+            </ul>
+        </nav>
+       <div class="checkbox-column"
+            id="pick-topic">
+        <div class="deck-content">
+            <div class="deck-header">
+               <h3 class="topic-ask">Choose topic:</h3>
+               <p class="flashcard-count">2 topics remaining</p>
+            </div>
+            <div class="deck-body">
+                <div 
+                class="flashcards">
+                <div 
+                class="flashcard">
+                <input 
+                type="checkbox"
+                id="topic 1" 
+                >
+                <label for="topic 1">
+                    <span class="custom-checkbox"></span> 
+                    Topic 1 
+                </label> 
+                </div>
+                <!--End topic 1-->
+                <div 
+                class="flashcard">
+                <input 
+                type="checkbox"
+                id="topic 2" 
+                >
+                <label for="topic 2">
+                    <span class="custom-checkbox"></span> 
+                    Topic 2 
+                </label> 
+                </div>
+                <!--End topic 2-->
+                <div 
+                class="flashcard">
+                <input 
+                type="checkbox"
+                id="topic 3" 
+                >
+                <label for="topic 3">
+                    <span class="custom-checkbox"></span> 
+                    Topic 3 
+                </label> 
+                </div>
+                <!--End topic 3-->
+                </div>
+                <div class="new topic creation">
+                    <form action="">
+                        <input
+                         type="text"
+                         class="new-deck"
+                         id="new topic"
+                         placeholder="add topic"
+                         aria-label="new topic name"
+                         >
+                     <button 
+                     class="btn create"
+                     aria-label="create new topic"
+                     >+</button>     
+                    </form>
+                </div>
+                <div class="delete-topic">
+                    <button class="btn delete">Delete topic</button>
+                    <button class ="btn delete">Clear all topics</button>
+                </div>
+            </div>
+        </div>   
+       </div>
+       <div class="checkbox-column">
+        <div class="deck-content">
+            <div class="deck-header">
+               <h3 class="topic-ask">Choose deck:</h3>
+               <p class="flashcard-count">2 decks remaining</p>
+            </div>
+            <div class="deck-body">
+                <div 
+                class="flashcards">
+                <div 
+                class="flashcard">
+                <input 
+                type="checkbox"
+                id="topic 1" 
+                >
+                <label for="topic 1">
+                    <span class="custom-checkbox"></span> 
+                    Deck 1 
+                </label> 
+                </div>
+                <!--End deck 1-->
+                <div 
+                class="deck">
+                <input 
+                type="checkbox"
+                id="deck2" 
+                >
+                <label for="topic 2">
+                    <span class="custom-checkbox"></span> 
+                    Deck 2 
+                </label> 
+                </div>
+                <!--End deck 2-->
+                <div 
+                class="deck">
+                <input 
+                type="checkbox"
+                id="deck 3" 
+                >
+                <label for="topic 3">
+                    <span class="custom-checkbox"></span> 
+                    Deck 3 
+                </label> 
+                </div>
+                <!--End deck 3-->
+                </div>
+                <div class="new deck creation">
+                    <form action="">
+                        <input
+                         type="text"
+                         class="new-deck"
+                         id="new deck"
+                         placeholder="add deck"
+                         aria-label="new deck name"
+                         >
+                     <button 
+                     class="btn create"
+                     aria-label="create new deck"
+                     >+</button>     
+                    </form>
+                </div>
+                <div class="delete-deck">
+                    <button class="btn delete">Delete deck</button>
+                    <button class ="btn delete">Clear all decks</button>
+                </div>
+            </div>
+        </div>   
+       </div>
+       <!--start of flashcard study-->
+       <div class="column-question">
+                <div class="flashcard-header">
+                <h4 class="question-text">What is the answer to this question?</h4>
+                </div>
+                <div class="answer-area">
+                    <div class="new topic creation">
+                        <textarea name="answer" id="flashcard-answer" cols="80" rows="23"></textarea>
+                        <div class="delete-deck">
+                            <button class="btn delete">Next flashcard</button>
+                            <button class="btn delete">Delete answer</button>
+                            <button class ="btn delete">Clear current flashcard</button>
+                            <button class="btn hint">Hint</button>
+                        </div>
+                    </div> 
+                </div>
+        </div>
+    </body>
+    </html>
